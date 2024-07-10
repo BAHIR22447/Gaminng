@@ -15,9 +15,9 @@ const Section_2: React.FC<{ showAll?: boolean }> = ({ showAll = false }) => {
 
   if (!showAll) {
     filteredList = followers_list
-      .slice() // Create a copy of the array to avoid mutating the original array
-      .sort((a, b) => b.followersNumber - a.followersNumber) // Sort by followers in descending order
-      .slice(0, 4); // Take the top 4 games
+      .slice() 
+      .sort((a, b) => b.followersNumber - a.followersNumber) 
+      .slice(0, 4); 
   }
 
   const togglePanel = (game: Game) => {
